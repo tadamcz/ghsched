@@ -1,0 +1,7 @@
+- run_path: example.sh
+  cron: '0 6 * * 1'  # Mondays 6am
+
+
+- run_path: example_dir/example.sh
+  cron: '0 6 * * *'  # Every day at 6am
+  name: 'Hello!'

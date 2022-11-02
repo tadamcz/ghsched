@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ghsched"
+version = "0.1.0"
+description = ""
+authors = ["tadamcz <tadamczewskipublic@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+PyYAML = "^6.0"
+jsonnet = "^0.19.1"
+python-slugify = "^6.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
