@@ -2,7 +2,7 @@ all: generate
 
 generate:
 	@echo "Generating files..."
-	python src/make.py
+	python make/make.py
 
 clean:
 	@echo "Deleting all files in .github/workflows..."

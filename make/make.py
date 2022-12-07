@@ -26,7 +26,7 @@ for task in schedule:
 	if not os.access(run_path, os.X_OK):
 		raise ValueError(f"File {run_path} is not executable")
 
-	workflow_content = jsonnet.evaluate_file("src/task.jsonnet", ext_vars={
+	workflow_content = jsonnet.evaluate_file("make/task.jsonnet", ext_vars={
 		"cron_expr": cron, "run_path": str(run_path), "name": name
 	})
 	workflow_content = json.loads(workflow_content)
