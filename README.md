@@ -23,6 +23,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - run: ./example_dir/example.sh
+    timeout-minutes: 5
 name: Hello!
 on:
   schedule:
